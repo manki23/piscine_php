@@ -1,7 +1,700 @@
 <!DOCTYPE HTML>
 <html lang="fr">
 	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color:wheat;
+			}
+			h1 {
+				text-align:center;
+			}
+			table2 {
+				border-width:1px;
+				border-style:solid;
+				border-color:black;
+				max-width:100%;
+			}
+			.mass {
+				text-align:right;
+				font-size:60%;
+			}
+			.number {
+				text-align:left;
+				font-size:60%;
+			}
+			.symbol {
+				font-weight:bold;
+				font-size:100%;
+				text-align:center;
+			}
+			div {
+				background-color:rgb(0, 200, 255);
+			}
+			.cell {
+				border-width:2px;
+				border-style:solid;
+				border-color:black;
+				max-width:100%;
+			}
+		</style>
 	</head>
 	<body>
+		<h1>Tableau périodique des éléments chimiques</h1>
+		<table id="table1" style="width:100%">
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">1.00794</div>
+					<div contenteditable="true" class="symbol">H</div>
+					<div contenteditable="true" class="number">1</div>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">4.002602</div>
+					<div contenteditable="true" class="symbol">He</div>
+					<div contenteditable="true" class="number">2</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">6.941</div>
+					<div contenteditable="true" class="symbol">Li</div>
+					<div contenteditable="true" class="number">3</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">9.012182</div>
+					<div contenteditable="true" class="symbol">Be</div>
+					<div contenteditable="true" class="number">4</div>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">10.811</div>
+					<div contenteditable="true" class="symbol">B</div>
+					<div contenteditable="true" class="number">5</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">12.0107</div>
+					<div contenteditable="true" class="symbol">C</div>
+					<div contenteditable="true" class="number">6</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">14.0067</div>
+					<div contenteditable="true" class="symbol">N</div>
+					<div contenteditable="true" class="number">7</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">15.9994</div>
+					<div contenteditable="true" class="symbol">O</div>
+					<div contenteditable="true" class="number">8</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">18.998403</div>
+					<div contenteditable="true" class="symbol">F</div>
+					<div contenteditable="true" class="number">9</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">20.1797</div>
+					<div contenteditable="true" class="symbol">Ne</div>
+					<div contenteditable="true" class="number">10</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">22.98976</div>
+					<div contenteditable="true" class="symbol">Na</div>
+					<div contenteditable="true" class="number">11</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">24.3050</div>
+					<div contenteditable="true" class="symbol">Mg</div>
+					<div contenteditable="true" class="number">12</div>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">26.98153</div>
+					<div contenteditable="true" class="symbol">Al</div>
+					<div contenteditable="true" class="number">13</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">28.0855</div>
+					<div contenteditable="true" class="symbol">Si</div>
+					<div contenteditable="true" class="number">14</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">30.97696</div>
+					<div contenteditable="true" class="symbol">P</div>
+					<div contenteditable="true" class="number">15</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">32.065</div>
+					<div contenteditable="true" class="symbol">S</div>
+					<div contenteditable="true" class="number">16</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">35.453</div>
+					<div contenteditable="true" class="symbol">Cl</div>
+					<div contenteditable="true" class="number">17</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">39.948</div>
+					<div contenteditable="true" class="symbol">Ar</div>
+					<div contenteditable="true" class="number">18</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">39.0983</div>
+					<div contenteditable="true" class="symbol">K</div>
+					<div contenteditable="true" class="number">19</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">40.078</div>
+					<div contenteditable="true" class="symbol">Ca</div>
+					<div contenteditable="true" class="number">20</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">44,95591</div>
+					<div contenteditable="true" class="symbol">Sc</div>
+					<div contenteditable="true" class="number">21</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">47.867</div>
+					<div contenteditable="true" class="symbol">Ti</div>
+					<div contenteditable="true" class="number">22</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">50.9415</div>
+					<div contenteditable="true" class="symbol">V</div>
+					<div contenteditable="true" class="number">23</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">51.9962</div>
+					<div contenteditable="true" class="symbol">Cr</div>
+					<div contenteditable="true" class="number">24</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">54,93804</div>
+					<div contenteditable="true" class="symbol">Mn</div>
+					<div contenteditable="true" class="number">25</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">55.845</div>
+					<div contenteditable="true" class="symbol">Fe</div>
+					<div contenteditable="true" class="number">26</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">58.93319</div>
+					<div contenteditable="true" class="symbol">Co</div>
+					<div contenteditable="true" class="number">27</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">58.6934</div>
+					<div contenteditable="true" class="symbol">Ni</div>
+					<div contenteditable="true" class="number">28</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">63.546</div>
+					<div contenteditable="true" class="symbol">Cu</div>
+					<div contenteditable="true" class="number">29</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">65.38</div>
+					<div contenteditable="true" class="symbol">Zn</div>
+					<div contenteditable="true" class="number">30</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">69.723</div>
+					<div contenteditable="true" class="symbol">Ga</div>
+					<div contenteditable="true" class="number">31</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">72.64</div>
+					<div contenteditable="true" class="symbol">Ge</div>
+					<div contenteditable="true" class="number">32</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">74.92160</div>
+					<div contenteditable="true" class="symbol">As</div>
+					<div contenteditable="true" class="number">33</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">78.96</div>
+					<div contenteditable="true" class="symbol">Se</div>
+					<div contenteditable="true" class="number">34</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">79.904</div>
+					<div contenteditable="true" class="symbol">Br</div>
+					<div contenteditable="true" class="number">35</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">83.798</div>
+					<div contenteditable="true" class="symbol">Kr</div>
+					<div contenteditable="true" class="number">36</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">85.4678</div>
+					<div contenteditable="true" class="symbol">Rb</div>
+					<div contenteditable="true" class="number">37</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">87.62</div>
+					<div contenteditable="true" class="symbol">Sr</div>
+					<div contenteditable="true" class="number">38</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">88.90585</div>
+					<div contenteditable="true" class="symbol">Y</div>
+					<div contenteditable="true" class="number">39</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">91.224</div>
+					<div contenteditable="true" class="symbol">Zr</div>
+					<div contenteditable="true" class="number">40</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">92.90638</div>
+					<div contenteditable="true" class="symbol">Nb</div>
+					<div contenteditable="true" class="number">41</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">95.96</div>
+					<div contenteditable="true" class="symbol">Mo</div>
+					<div contenteditable="true" class="number">42</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">98</div>
+					<div contenteditable="true" class="symbol">Tc</div>
+					<div contenteditable="true" class="number">43</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">101.07</div>
+					<div contenteditable="true" class="symbol">Ru</div>
+					<div contenteditable="true" class="number">44</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">102.9055</div>
+					<div contenteditable="true" class="symbol">Rh</div>
+					<div contenteditable="true" class="number">45</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">106.42</div>
+					<div contenteditable="true" class="symbol">Pd</div>
+					<div contenteditable="true" class="number">46</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">107.8682</div>
+					<div contenteditable="true" class="symbol">Ag</div>
+					<div contenteditable="true" class="number">47</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">112.441</div>
+					<div contenteditable="true" class="symbol">Cd</div>
+					<div contenteditable="true" class="number">48</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">114.818</div>
+					<div contenteditable="true" class="symbol">In</div>
+					<div contenteditable="true" class="number">49</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">118.710</div>
+					<div contenteditable="true" class="symbol">Sn</div>
+					<div contenteditable="true" class="number">50</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">121.760</div>
+					<div contenteditable="true" class="symbol">Sb</div>
+					<div contenteditable="true" class="number">51</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">127.60</div>
+					<div contenteditable="true" class="symbol">Te</div>
+					<div contenteditable="true" class="number">52</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">126.9044</div>
+					<div contenteditable="true" class="symbol">I</div>
+					<div contenteditable="true" class="number">53</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">131.293</div>
+					<div contenteditable="true" class="symbol">Xe</div>
+					<div contenteditable="true" class="number">54</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">132.9054</div>
+					<div contenteditable="true" class="symbol">Cs</div>
+					<div contenteditable="true" class="number">55</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">137.327</div>
+					<div contenteditable="true" class="symbol">Ba</div>
+					<div contenteditable="true" class="number">56</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">174.9668</div>
+					<div contenteditable="true" class="symbol">Lu</div>
+					<div contenteditable="true" class="number">71</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">178.49</div>
+					<div contenteditable="true" class="symbol">Hf</div>
+					<div contenteditable="true" class="number">72</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">180.9478</div>
+					<div contenteditable="true" class="symbol">Ta</div>
+					<div contenteditable="true" class="number">73</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">183.84</div>
+					<div contenteditable="true" class="symbol">W</div>
+					<div contenteditable="true" class="number">74</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">186.207</div>
+					<div contenteditable="true" class="symbol">Re</div>
+					<div contenteditable="true" class="number">75</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">190.23</div>
+					<div contenteditable="true" class="symbol">Os</div>
+					<div contenteditable="true" class="number">76</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">192.217</div>
+					<div contenteditable="true" class="symbol">Ir</div>
+					<div contenteditable="true" class="number">77</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">195.084</div>
+					<div contenteditable="true" class="symbol">Pt</div>
+					<div contenteditable="true" class="number">78</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">196.9665</div>
+					<div contenteditable="true" class="symbol">Au</div>
+					<div contenteditable="true" class="number">79</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">200.59</div>
+					<div contenteditable="true" class="symbol">Hg</div>
+					<div contenteditable="true" class="number">80</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">204.3833</div>
+					<div contenteditable="true" class="symbol">Tl</div>
+					<div contenteditable="true" class="number">81</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">207.2</div>
+					<div contenteditable="true" class="symbol">Pb</div>
+					<div contenteditable="true" class="number">82</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">208.9804</div>
+					<div contenteditable="true" class="symbol">Bi</div>
+					<div contenteditable="true" class="number">83</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">210</div>
+					<div contenteditable="true" class="symbol">Po</div>
+					<div contenteditable="true" class="number">84</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">210</div>
+					<div contenteditable="true" class="symbol">At</div>
+					<div contenteditable="true" class="number">85</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">220</div>
+					<div contenteditable="true" class="symbol">Rn</div>
+					<div contenteditable="true" class="number">86</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">223</div>
+					<div contenteditable="true" class="symbol">Fr</div>
+					<div contenteditable="true" class="number">87</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">226</div>
+					<div contenteditable="true" class="symbol">Ra</div>
+					<div contenteditable="true" class="number">88</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">262</div>
+					<div contenteditable="true" class="symbol">Lr</div>
+					<div contenteditable="true" class="number">103</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">261</div>
+					<div contenteditable="true" class="symbol">Rf</div>
+					<div contenteditable="true" class="number">104</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">262</div>
+					<div contenteditable="true" class="symbol">Db</div>
+					<div contenteditable="true" class="number">105</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">266</div>
+					<div contenteditable="true" class="symbol">Sg</div>
+					<div contenteditable="true" class="number">106</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">264</div>
+					<div contenteditable="true" class="symbol">Bh</div>
+					<div contenteditable="true" class="number">107</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">277</div>
+					<div contenteditable="true" class="symbol">Hs</div>
+					<div contenteditable="true" class="number">108</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">268</div>
+					<div contenteditable="true" class="symbol">Mt</div>
+					<div contenteditable="true" class="number">109</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">271</div>
+					<div contenteditable="true" class="symbol">Ds</div>
+					<div contenteditable="true" class="number">110</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">272</div>
+					<div contenteditable="true" class="symbol">Rg</div>
+					<div contenteditable="true" class="number">111</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">285</div>
+					<div contenteditable="true" class="symbol">Cn</div>
+					<div contenteditable="true" class="number">112</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">284</div>
+					<div contenteditable="true" class="symbol">Nh</div>
+					<div contenteditable="true" class="number">113</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">289</div>
+					<div contenteditable="true" class="symbol">Fl</div>
+					<div contenteditable="true" class="number">114</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">288</div>
+					<div contenteditable="true" class="symbol">Mc</div>
+					<div contenteditable="true" class="number">115</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">292</div>
+					<div contenteditable="true" class="symbol">Lv</div>
+					<div contenteditable="true" class="number">116</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">294</div>
+					<div contenteditable="true" class="symbol">Ts</div>
+					<div contenteditable="true" class="number">117</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">294</div>
+					<div contenteditable="true" class="symbol">Og</div>
+					<div contenteditable="true" class="number">118</div>
+				</td>
+			</tr>
+		</table>
+		<BR />
+		<table id="table2" style="width:100%">
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">138.9054</div>
+					<div contenteditable="true" class="symbol">La</div>
+					<div contenteditable="true" class="number">57</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">140.116</div>
+					<div contenteditable="true" class="symbol">Ce</div>
+					<div contenteditable="true" class="number">58</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">140.9076</div>
+					<div contenteditable="true" class="symbol">Pr</div>
+					<div contenteditable="true" class="number">59</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">144.242</div>
+					<div contenteditable="true" class="symbol">Nd</div>
+					<div contenteditable="true" class="number">60</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">145</div>
+					<div contenteditable="true" class="symbol">Pm</div>
+					<div contenteditable="true" class="number">61</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">150.36</div>
+					<div contenteditable="true" class="symbol">Sm</div>
+					<div contenteditable="true" class="number">62</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">151.964</div>
+					<div contenteditable="true" class="symbol">Eu</div>
+					<div contenteditable="true" class="number">63</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">157.25</div>
+					<div contenteditable="true" class="symbol">Gd</div>
+					<div contenteditable="true" class="number">64</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">158.9253</div>
+					<div contenteditable="true" class="symbol">Tb</div>
+					<div contenteditable="true" class="number">65</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">162.500</div>
+					<div contenteditable="true" class="symbol">Dy</div>
+					<div contenteditable="true" class="number">66</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">164.9303</div>
+					<div contenteditable="true" class="symbol">Ho</div>
+					<div contenteditable="true" class="number">67</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">167.259</div>
+					<div contenteditable="true" class="symbol">Er</div>
+					<div contenteditable="true" class="number">68</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">168.9342</div>
+					<div contenteditable="true" class="symbol">Tm</div>
+					<div contenteditable="true" class="number">69</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">172.054</div>
+					<div contenteditable="true" class="symbol">Yb</div>
+					<div contenteditable="true" class="number">70</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="cell">
+					<div contenteditable="true" class="mass">227</div>
+					<div contenteditable="true" class="symbol">Ac</div>
+					<div contenteditable="true" class="number">89</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">232.0380</div>
+					<div contenteditable="true" class="symbol">Th</div>
+					<div contenteditable="true" class="number">90</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">231.0358</div>
+					<div contenteditable="true" class="symbol">Pa</div>
+					<div contenteditable="true" class="number">91</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">238.0289</div>
+					<div contenteditable="true" class="symbol">U</div>
+					<div contenteditable="true" class="number">92</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">237</div>
+					<div contenteditable="true" class="symbol">Np</div>
+					<div contenteditable="true" class="number">93</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">244</div>
+					<div contenteditable="true" class="symbol">Pu</div>
+					<div contenteditable="true" class="number">94</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">243</div>
+					<div contenteditable="true" class="symbol">Am</div>
+					<div contenteditable="true" class="number">95</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">247</div>
+					<div contenteditable="true" class="symbol">Cm</div>
+					<div contenteditable="true" class="number">96</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">247</div>
+					<div contenteditable="true" class="symbol">Bk</div>
+					<div contenteditable="true" class="number">97</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">251</div>
+					<div contenteditable="true" class="symbol">He</div>
+					<div contenteditable="true" class="number">98</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">252</div>
+					<div contenteditable="true" class="symbol">Es</div>
+					<div contenteditable="true" class="number">99</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">257</div>
+					<div contenteditable="true" class="symbol">Fm</div>
+					<div contenteditable="true" class="number">100</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">258</div>
+					<div contenteditable="true" class="symbol">Md</div>
+					<div contenteditable="true" class="number">101</div>
+				</td>
+				<td class="cell">
+					<div contenteditable="true" class="mass">259</div>
+					<div contenteditable="true" class="symbol">No</div>
+					<div contenteditable="true" class="number">102</div>
+				</td>
+			</tr>
+		</table>
+		<p>
+			<a href="https://fr.wikipedia.org/wiki/Dmitri_Mendele%C3%AFev" target="_blank">
+				<IMG SRC="https://upload.wikimedia.org/wikipedia/commons/8/8f/Dmitri_Mendeleev_1890s.jpg">
+			</a>
+
+		</p>
 	</body>
 </html>
