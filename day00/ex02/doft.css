@@ -1,110 +1,129 @@
 body {
-	background-color:rgb(75,75,75);;
+	background-color:rgb(79, 79, 79);
 }
-.rectangle {
-	position:relative;
+
+.topbar {
+	display:inline-block;
+	background-color:rgb(144, 144, 144);
 	border-radius: 10px;
-	background-color: rgb(144,144,144);
-	height:160px;
-	width: 80%;
-	border-radius: 10px;
-	margin-left:10%;
-	margin-top:1%;
-	box-shadow: 10px 9px 8px #000; ;
+	box-shadow: 10px 7px 7px black;
+	width:1920px;
 }
-table {
-	border-collapse:separate;
+
+.logo, .loupe, .topbuttons {
+	display:inline-block;
 }
-.block-left, .block-middle, .block-right {
-	text-align:center;
-	background-color: rgb(144,144,144);
-	border-radius: 10px;
-}
-.elem {
-	width:35%;
-    padding-bottom:10%;
-}
-.block-middle IMG {
-	padding: 2%;
-	width:120%;
-}
-.block-right {
-	vertical-align: top;
-	margin-left: 30px;
-	height:594px;
-}
-#day_of_the_42 {
+
+.logo {
 	text-align: left;
 	float: left;
 	margin-left: 20px;
 	margin-top: 20px;
-	border-radius: 10px;
-	width:360px;
-	position:absolute;
-	bottom:15%;
-	left:0;
-}
-#close {
-	width: 2.5%;
-	position:absolute;
-	bottom:5%;
-	right:1%;
-}
-#loupe {
-	width: 16%;
-	position:absolute;
-	bottom:-14%;
-	right:4%;
-}
-#reload {
-	width: 2.5%;
-	position:absolute;
-	top:5%;
-	right:1%;
-}
-div.popup {
-    width:600px;
-    background-color:rgb(139, 252, 141);
-    border-radius:10px;
-    padding:15px 15px 50px 15px;
-    position:absolute;
-    box-shadow: 10px 7px 7px black;
-    margin-top:-100px;
-    margin-left:130px;
-}
-.popup p {
-    margin:0px 0px 5px 0px;
-    font-size:18px;
 }
 
-.popup .game-field {
-    width:300px;
-    margin-right:10px;
+.logo img {
+	width: 60%;
 }
 
-.bword {
-    font-size:30px;
+.loupe img {
+	position: absolute;
+	margin-left: 220px;
+	margin-top: 45px;
 }
-#arrow {
+
+.topbuttons {
+	padding: 10px;
+	float: right;
 }
-#main {
+
+.reload {
+	width:20px;
+	display: block;
+	padding-bottom: 115px;
 }
-#oeil {
+
+.left-menu, .right-menu {
+	background-color:rgb(144, 144, 144);
+	border-radius:10px;
+	box-shadow: 10px 7px 7px black;
+	width:200px;
+	display:inline-block;
+
 }
-#outil {
+
+.left-menu {
+	margin-right: 30px;
+	vertical-align:top;
 }
-#chat-icon {
+
+.left-menu div {
+	text-align:center;
+	margin-top: 7px;
 }
-#cluster {
+
+.elem img {
+	width:100px;
+	padding-bottom:10px;
 }
-#book {
+.elem:first-child img {
+	padding-top:10px;
 }
-#towel {
+
+.elem:last-child img {
+	padding-bottom:20px;
 }
-#brick {
+
+.room {
+	background-color:rgb(144, 144, 144);
+	border-radius:10px;
+	box-shadow: 10px 7px 7px black;
+	display:inline-block;
+}
+
+.room img {
+	padding: 10px;
+	width:1350px;
+}
+
+.right-menu {
+	vertical-align: top;
+	margin-left: 30px;
+	height:594px;
+}
+
+.brick {
 	background-repeat: repeat;
 	background-image: url(resources/brick.jpg);
 	text-align: center;
 	width: 170px;
 	height: 100px;
 }
+.popup {
+	width:600px;
+	background-color:rgb(139, 252, 141);
+	border-radius:10px;
+	padding:15px 15px 50px 15px;
+	position:absolute;
+	box-shadow: 10px 7px 7px black;
+	margin-top:-100px;
+	margin-left:130px;
+}
+
+.popup p {
+	margin:0px 0px 5px 0px;
+	font-size:18px;
+}
+
+.popup .game-field {
+	width:300px;
+	margin-right:10px;
+}
+
+.bword {
+	font-size:30px;
+}
+
+.surligne{
+	text-shadow: 7px 7px 5px rgb(255, 50, 18);
+}
+
