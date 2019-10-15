@@ -42,6 +42,11 @@ body {
 	padding-bottom: 115px;
 }
 
+.oeil {
+	border: 7px solid red;
+	border-radius: 10px;
+}
+
 .left-menu, .right-menu {
 	background-color:rgb(144, 144, 144);
 	border-radius:10px;
@@ -58,19 +63,19 @@ body {
 
 .left-menu div {
 	text-align:center;
-	margin-top: 7px;
+	margin-top: 3px;
 }
 
 .elem img {
 	width:100px;
-	padding-bottom:10px;
+	margin-bottom:10px;
 }
 .elem:first-child img {
-	padding-top:10px;
+	margin-top:10px;
 }
 
 .elem:last-child img {
-	padding-bottom:20px;
+	margin-bottom:20px;
 }
 
 .room {
@@ -81,7 +86,7 @@ body {
 }
 
 .room img {
-	padding: 10px;
+	margin: 10px;
 	width:1350px;
 }
 

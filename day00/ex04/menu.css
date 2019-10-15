@@ -1,0 +1,43 @@
+body {
+	background-color:wheat;
+}
+h3 {
+	margin-top:20%;
+}
+#menu {
+	text-align:center;
+	margin: 0 auto;
+	width: 400px;
+	display:table-cell;
+}
+#menu ul {
+	list-style-type:none;
+	text-align:center;
+}
+#menu li {
+	float:left;
+	margin:auto;
+	background-color:black;
+}
+#menu li a {
+	display:block;
+	width:100px;
+	color:white;
+	text-decoration:none;
+	padding:5px;
+}
+#menu li a:hover {
+	color:red;
+}
+#menu ul li ul {
+ display:none;
+ }
+#menu ul li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:none;
+ }
+#menu li ul {
+	position:absolute;
+}
