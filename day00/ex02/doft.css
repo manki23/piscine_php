@@ -103,8 +103,8 @@ body {
 	width: 170px;
 	height: 100px;
 }
-.popup {
-	width:600px;
+.window {
+	width:500px;
 	background-color:rgb(139, 252, 141);
 	border-radius:10px;
 	padding:15px 15px 50px 15px;
@@ -114,18 +114,18 @@ body {
 	margin-left:130px;
 }
 
-.popup p {
+.window p {
 	margin:0px 0px 5px 0px;
-	font-size:18px;
+	font-size:22px;
 }
 
-.popup .game-field {
-	width:300px;
+.window .repondre {
+	width:400px;
 	margin-right:10px;
 }
 
 .bword {
-	font-size:30px;
+	font-size:32px;
 }
 
 .surligne{
