@@ -5,7 +5,7 @@ function ft_what_is_number($nb)
 {
 	if (is_numeric($nb))
 	{
-		if ($nb % 2)
+		if (substr($nb, strlen($nb) - 1) % 2)
 			echo "Le chiffre "."$nb"." est Impair\n";
 		else
 			echo "Le chiffre "."$nb"." est Pair\n";
