@@ -3,6 +3,6 @@
 
 include("ft_split.php");
 
-print_r(ft_split("          H\rel	lo                 W,or;l.d\ndeux AAA"));
+print_r(ft_split($argv[1]));
 
 ?>
