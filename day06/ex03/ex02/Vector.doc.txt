@@ -1,0 +1,28 @@
+<- Vector  ----------------------------------------------------------------------
+The Vector class handles vectors.
+
+An instance can be constructed like this:
+new Vector( array('orig' => $vtxO, 'dest' => $vtxX) );
+'dest' constitutives are substracted from 'orig' constitutives.
+
+The class provides the following methods:
+->magnitude()
+    returns a Float: the length of the vector.
+->normalize()
+    returns a Vector: the normalized vector. If the Vector is already normalized, the function
+will returns a new copy.
+->add( Vector $rhs):
+    returns a Vector: the sum of the two vectors.
+->sub( Vector $rhs):
+    returns a Vector: the difference between the two vectors.
+->opposite():
+    returns a Vector: the opposite vector.
+->scalarProduct( $k ):
+    returns  a Vector: the multiplication of the vector with a scalar integer.
+->dotProduct( Vector $rhs ):
+    returns a Float: the scalare multiplication of two vectors.
+->cos( Vector $rhs ):
+    returns a Float: the cosine of the angle between two vectors.
+->crossProduct( Vector $rhs ):
+    returns a Float: the cross product of two vectors (with a right hand landmark).
+---------------------------------------------------------------------- Vector ->
