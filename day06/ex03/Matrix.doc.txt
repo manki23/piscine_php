@@ -1,0 +1,24 @@
+<- Matrix  ----------------------------------------------------------------------
+The Matrix class handles matrices.
+The Matrix class suggests 7 class constants : IDENTITY, SCALE, RX, RY, RZ,
+TRANSLATION and PROJECTION.
+An instance can be constructed from a tab, with a compulsory key and optional
+keys :
+Compulsory key :
+The key 'preset' is compulsory and determines the matrice's type to build. The
+value must be one of the seven constant described before.
+Optional key :
+- 'scale' is compulsory if the preset is SCALE. 'scale' is a float.
+- 'angle' is compulsory if the preset is RX, RY or RZ.
+- 'vtc' is compulsory when the preset is TRANSLATION. 'vtc' is a instance of
+a Vertex class.
+- 'fov' is compulsory when the preset is PROJECTION. 'fov' is an integer.
+- 'ratio' is compulsory when the preset is PROJECTION. 'ratio' is a ratio.
+- 'near' is compulsory when the preset is PROJECTION. 'near' is a float.
+- 'far' is compulsory when the preset is PROJECTION. 'far' is a float.
+The class provides the following methods :
+Matrix mult ( Matrix $rhs ):
+It returns a new matrice from the multiplication of the two matrices.
+Vertex transformVertex( Vertex  $vtx ):
+returns a new Vertex from the transformation of the Vertex with the matrice.
+---------------------------------------------------------------------- Matrix ->

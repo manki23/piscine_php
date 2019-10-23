@@ -1,4 +1,7 @@
 <?php
+
+require_once 'Color.class.php';
+
 class Vertex {
     private $_x;
     private $_y;

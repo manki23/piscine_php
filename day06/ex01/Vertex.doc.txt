@@ -1,3 +1,19 @@
 <- Vertex ----------------------------------------------------------------------
-Your documentation here.
+
+The Vertex class handles a vertex position in a space.
+
+An instance can be constructed from 3 compulsory parameters and two optionnal
+parameters. All of them have must come from an array.
+
+Compulsory Parameters :
+new Vertex( array( 'x' => 12345, 'y' => 12345, 'z' => 12345) );
+x represents the abscissas, y represents the ordinate and z the depth.
+
+Optionnal Parameters :
+new Vertex( array( 'x' => 12345, 'y' => 12345, 'z' => 12345, 'w' => 1.0, 'color'=> $blue) );
+w allows the users to simplify matrix calculation. color is an instance of the Color class.
+
+The class doesn't provide specific methods.
+To summarized, the Vertex class purpose is to encapsulate the coordinates
+and to give access to the atributes.
 ---------------------------------------------------------------------- Vertex ->
