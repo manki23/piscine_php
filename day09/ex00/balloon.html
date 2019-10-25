@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf8>
+        <title>Veuillez souffler dans le ballon</title>
+        <style>
+            .balloon {
+                height:200px;
+                width:200px;
+                border-radius: 50%;
+                vertical-align:middle;
+                margin-top: 50vh;
+                transform: translateY(-50%);
+            }
+            .be_red {
+                background-color: red;
+            }
+            .be_green {
+                background-color: green;
+            }
+            .be_blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body><center>
+        <div class="balloon be_red"></div>
+        <script>
+            const balloon = document.querySelector(".balloon")
+
+            balloon.addEventListener("click", onClick)
+            balloon.addEventListener("mouseleave", onMouseLeave)
+            
+            function changeColor() {
+            if (balloon.classList.contains('be_red')) {
+                balloon.classList.remove('be_red')
+                balloon.classList.add('be_green')
+            } 
+            else if (balloon.classList.contains('be_green')) {
+                balloon.classList.remove('be_green')
+                balloon.classList.add('be_blue')
+            }
+            else if (balloon.classList.contains('be_blue')) {
+                balloon.classList.remove('be_blue')
+                balloon.classList.add('be_red')
+            }
+        }
+
+        function changeColorRev() {
+            if (balloon.classList.contains('be_red')) {
+                balloon.classList.remove('be_red')
+                balloon.classList.add('be_blue')
+            } 
+            else if (balloon.classList.contains('be_green')) {
+                balloon.classList.remove('be_green')
+                balloon.classList.add('be_red')
+            }
+            else if (balloon.classList.contains('be_blue')) {
+                balloon.classList.remove('be_blue')
+                balloon.classList.add('be_green')
+            }
+        }
+
+        function remove_last_chars(str) {
+                return str.slice(0, str.length - 2)
+            }
+
+        function onClick() {
+            let height = parseInt(remove_last_chars(getComputedStyle(balloon).height))
+            let width = parseInt(remove_last_chars(getComputedStyle(balloon).width))
+            if (height <= 410 && width <= 410) {
+                changeColor()
+                balloon.style.width = (width + 10) + "px"
+                balloon.style.height = (height + 10) + "px"
+            }
+            else {
+                changeColor()
+                balloon.style.width = "200px"
+                balloon.style.height = "200px"
+            }
+           
+        }
+
+        function onMouseLeave() {
+            let height = parseInt(remove_last_chars(getComputedStyle(balloon).height))
+            let width = parseInt(remove_last_chars(getComputedStyle(balloon).width))
+            if (height >= 205 && width >= 205) {
+                changeColorRev()
+                balloon.style.width = (width - 5) + "px"
+                balloon.style.height = (height - 5) + "px"
+            }
+        }
+
+        </script>
+    </center></body>
+</html>

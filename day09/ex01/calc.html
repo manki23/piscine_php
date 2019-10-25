@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf8>
+        <title>It’s over 9000</title>
+        <style>
+            center {
+                margin-top: 40vh;
+                transform: translateY(-50%);
+            }
+        </style>
+    </head>
+    <body><center>
+        <input type="text" id="left_input">
+        <select id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right_input">
+        <input type="submit" id="calcul" value='Try me!'>
+        <div></div>
+        <script>
+            const left_input = document.getElementById('left_input')
+            const right_input = document.getElementById('right_input')
+            const operator = document.getElementById('op')
+            const calcul = document.getElementById('calcul')
+
+            calcul.addEventListener('click', onClick)
+
+            function onClick() {
+                let l = left_input.value
+            }
+        </script>
+    </center></body>
+</html>
