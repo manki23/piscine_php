@@ -32,7 +32,54 @@
 
             function onClick() {
                 let l = left_input.value
+                let r = right_input.value
+
+                if (l == "" || r == "" || isNaN(l) || isNaN(r))
+                    return ft_message("Error :(")
+                if (!Number.isInteger(Number(l)) || !Number.isInteger(Number(r))
+                || Number(l) < 0 || Number(r) < 0)
+                    return ft_message("Error :(")
+                if (Number(r) === 0 && (op.value === "/" || op.value === "%"))
+                    return ft_message("It’s over 9000!", true)
+                ft_calc(l, r)
             }
+
+            function ft_calc(l, r) {
+                l = Number(l)
+                r = Number(r)
+                switch (operator.value) {
+                    case "+":
+                        if (l + r <= 4294967295)
+                            ft_message(l + r, true)
+                        break;
+                    case "-":
+                        if (l - r <= 4294967295)
+                            ft_message(l - r, true)
+                        break;
+                    case "%":
+                        if (l % r <= 4294967295)
+                            ft_message(l % r, true)
+                        break;
+                    case "/":
+                        if (l / r <= 4294967295)
+                            ft_message(l / r, true)
+                        break;
+                    case "*":
+                        if (l * r <= 4294967295)
+                            ft_message(l * r, true)
+                        break;
+            }
+        }
+
+        function ft_message(msg, log) {
+            alert(msg)
+            if (log)
+                console.log(msg)
+        }
+
+        window.setInterval(() => {
+            ft_message("Please, use me ...")
+        }, 30000)
         </script>
     </center></body>
 </html>
