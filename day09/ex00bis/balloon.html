@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf8>
+        <title>Veuillez souffler dans le ballon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            .balloon {
+                height:200px;
+                width:200px;
+                border-radius: 50%;
+                vertical-align:middle;
+                margin-top: 50vh;
+                transform: translateY(-50%);
+            }
+            .be_red {
+                background-color: red;
+            }
+            .be_green {
+                background-color: green;
+            }
+            .be_blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body><center>
+        <div class="balloon be_red"></div>
+        <script>
+            $(".balloon").click(onClick)
+            $(".balloon").mouseleave(onMouseLeave)
+
+            function changeColor() {
+                if ($(".balloon").hasClass('be_red')) {
+                    $(".balloon").removeClass('be_red')
+                    $(".balloon").addClass('be_green')
+                } 
+                else if ($(".balloon").hasClass('be_green')) {
+                    $(".balloon").removeClass('be_green')
+                    $(".balloon").addClass('be_blue')
+                }
+                else if ($(".balloon").hasClass('be_blue')) {
+                    $(".balloon").removeClass('be_blue')
+                    $(".balloon").addClass('be_red')
+                }
+            }
+
+            function changeColorRev() {
+                if ($(".balloon").hasClass('be_red')) {
+                    $(".balloon").removeClass('be_red')
+                    $(".balloon").addClass('be_blue')
+                } 
+                else if ($(".balloon").hasClass('be_green')) {
+                    $(".balloon").removeClass('be_green')
+                    $(".balloon").addClass('be_red')
+                }
+                else if ($(".balloon").hasClass('be_blue')) {
+                    $(".balloon").removeClass('be_blue')
+                    $(".balloon").addClass('be_green')
+                }
+            }
+
+            function onClick() {
+                if ($(".balloon").height() && $(".balloon").width() <= 410) {
+                    changeColor()
+                    $(".balloon").css("width", ($(".balloon").width() + 10) + "px");
+                    $(".balloon").css("height", ($(".balloon").height() + 10) + "px");
+                }
+                else {
+                    changeColor()
+                    $(".balloon").css("width", "200px");
+                    $(".balloon").css("height", "200px");
+                }
+            }
+
+            function onMouseLeave() {
+                if ($(".balloon").height() >= 205 && $(".balloon").width() >= 205) {
+                    changeColorRev()
+                    $(".balloon").css("width", ($(".balloon").width() - 5) + "px");
+                    $(".balloon").css("height", ($(".balloon").height() - 5) + "px");
+                }
+            }
+
+        </script>
+    </center></body>
+</html>

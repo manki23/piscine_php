@@ -3,6 +3,7 @@
     <head>
         <meta charset=utf8>
         <title>It’s over 9000</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <style>
             center {
                 margin-top: 40vh;
@@ -23,23 +24,18 @@
         <input type="submit" id="calcul" value='Try me!'>
         <div></div>
         <script>
-            const left_input = document.getElementById('left_input')
-            const right_input = document.getElementById('right_input')
-            const operator = document.getElementById('op')
-            const calcul = document.getElementById('calcul')
-
-            calcul.addEventListener('click', onClick)
+            $('#calcul').click(onClick)
 
             function onClick() {
-                let l = left_input.value
-                let r = right_input.value
+                let l = $('#left_input').val()
+                let r = $('#right_input').val()
 
                 if (l == "" || r == "" || isNaN(l) || isNaN(r))
                     return ft_message("Error :(")
                 if (!Number.isInteger(Number(l)) || !Number.isInteger(Number(r))
                 || Number(l) < 0 || Number(r) < 0)
                     return ft_message("Error :(")
-                if (Number(r) === 0 && (op.value === "/" || op.value === "%"))
+                if (Number(r) === 0 && ($('#op').val() === "/" || $('#op').val() === "%"))
                     return ft_message("It’s over 9000!", true)
                 ft_calc(l, r)
             }
@@ -47,21 +43,21 @@
             function ft_calc(l, r) {
                 l = Number(l)
                 r = Number(r)
-                switch (operator.value) {
+                switch ($('#op').val()) {
                     case "+":
-                        ft_message(l + r, true)
+                            ft_message(l + r, true)
                         break;
                     case "-":
-                        ft_message(l - r, true)
+                            ft_message(l - r, true)
                         break;
                     case "%":
-                        ft_message(l % r, true)
+                            ft_message(l % r, true)
                         break;
                     case "/":
-                        ft_message(l / r, true)
+                            ft_message(l / r, true)
                         break;
                     case "*":
-                        ft_message(l * r, true)
+                            ft_message(l * r, true)
                         break;
             }
         }
